@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E & M Dishes - Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Zoom-in hover effect for food cards */
+        .hover-zoom:hover img {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 scroll-smooth">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-3xl font-extrabold text-red-600 hover:text-red-700 transition duration-300">
+                    E & M Dishes
+                </div>
+                <div class="space-x-6 text-lg font-semibold">
+                    <a href="#home" class="text-gray-600 hover:text-red-600 transition duration-300">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-red-600 transition duration-300">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-red-600 transition duration-300">Contact</a>
+
+                    <a href="signup.html" class="text-gray-600 hover:text-red-600 transition duration-300">Signup</a>
+                    <a href="login.html" class="text-gray-600 hover:text-red-600 transition duration-300">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-cover bg-center h-screen" style="background-image: url('assets/dish4.jpeg');">
+        <div class="h-full flex flex-col justify-center items-center bg-black bg-opacity-50 text-center">
+            <h1 class="text-white text-5xl md:text-7xl font-bold drop-shadow-lg mb-4 animate-pulse">
+                Welcome to E & M Dishes
+            </h1>
+            <p class="text-gray-300 text-xl mb-6">
+                Discover Authentic Swahili Cuisine
+            </p>
+            <a href="#dishes" class="px-8 py-3 bg-red-600 text-white rounded-full text-lg font-semibold hover:bg-red-700 transition duration-300">
+                Explore Menu
+            </a>
+        </div>
+    </header>
+
+    <!-- Featured Dishes Section -->
+    <section id="dishes" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-red-600">Featured Swahili Dishes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-zoom transform transition duration-300 hover:shadow-lg">
+                    <img src="assets/dish1.jpg" alt="Fish-Salad" class="w-full h-56 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Fish-Salad</h3>
+                        <p class="text-gray-600">A refreshing fish-salad combo.</p>
+                        <p class="text-red-600 font-bold">Ksh 850</p>
+                        <a href="order.html" class="inline-block mt-4 px-6 py-2 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition duration-300">
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-zoom transform transition duration-300 hover:shadow-lg">
+                    <img src="assets/dish2.jpg" alt="Mahamri" class="w-full h-56 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Mahamri</h3>
+                        <p class="text-gray-600">Sweet fried bread, perfect with tea.</p>
+                        <p class="text-red-600 font-bold">Ksh 120</p>
+                        <a href="order.html" class="inline-block mt-4 px-6 py-2 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition duration-300">
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-zoom transform transition duration-300 hover:shadow-lg">
+                    <img src="assets/dish3.jpg" alt="Rice-meat" class="w-full h-56 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-800">Rice-meat</h3>
+                        <p class="text-gray-600">One of the best Swahili cuisines</p>
+                        <p class="text-red-600 font-bold">Ksh 200</p>
+                        <a href="order.html" class="inline-block mt-4 px-6 py-2 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition duration-300">
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">&copy; 2025 E & M Dishes. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

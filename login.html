@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - E & M Dishes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <h2 class="text-2xl font-bold text-center mb-6 text-red-600">Login to Your Account</h2>
+        <form onsubmit="event.preventDefault(); redirectToHome();">
+            <input type="text" placeholder="Username" class="w-full mb-4 p-3 border rounded" required>
+            <input type="password" placeholder="Password" class="w-full mb-4 p-3 border rounded" required>
+            <button type="submit" class="w-full bg-red-600 text-white py-3 rounded hover:bg-red-700 transition duration-300">
+                Login
+            </button>
+        </form>
+    </div>
+    <script>
+        function redirectToHome() {
+            alert("Login successful!");
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
